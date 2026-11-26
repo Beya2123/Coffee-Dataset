@@ -1,0 +1,62 @@
+Gathering and hashing images. This may take a few minutes for the main dataset...
+Loading /content/drive/MyDrive/Bayile/Coffee/coffee-dataset...
+  Processed 5000/58546 images...
+  Processed 10000/58546 images...
+  Processed 15000/58546 images...
+  Processed 20000/58546 images...
+  Processed 25000/58546 images...
+  Processed 30000/58546 images...
+  Processed 35000/58546 images...
+  Processed 40000/58546 images...
+  Processed 45000/58546 images...
+  Processed 50000/58546 images...
+  Processed 55000/58546 images...
+Finished hashing our dataset: 58546 images.
+Loading JMuBEN/JMuBEN2...
+  Found 58,555 images in JMuBEN/JMuBEN2.
+Loading RoCoLe...
+  Found 1560 images in RoCoLe.
+Loading BRACOL...
+  Found 1747 images in BRACOL.
+
+Comparing hashes...
+
+==================================================
+Dataset Hash Comparison Report
+Paper 63: Coffee Leaf Plant Disease Identification through Image Processing and Machine-Learning Techniques in Ethiopia.
+Authors: Bayile Getu Taye and Neeraj Goel
+Date: 2026-11-26
+
+Purpose:
+This report documents the comparison between our independently collected Ethiopian dataset
+(58546 images) and the public datasets JMuBEN/JMuBEN2 (Kenya),
+BRACOL (Brazil), and RoCoLe (Ecuador).
+
+Methodology:
+1. File Hash (MD5): We computed the MD5 checksum of every image in our dataset.
+2. Perceptual Hash (pHash): We computed the pHash of every image and grouped them
+   using a Hamming distance threshold of <= 3.
+
+Results:
+
+Comparison with JMuBEN/JMuBEN2:
+  - Exact File Hash (MD5) Matches: 0
+  - Perceptual Hash (pHash) Matches (<= 3 distance): 0
+  - Minimum Hamming distance found: 12
+
+Comparison with RoCoLe:
+  - Exact File Hash (MD5) Matches: 0
+  - Perceptual Hash (pHash) Matches (<= 3 distance): 0
+  - Minimum Hamming distance found: 18
+
+Comparison with BRACOL:
+  - Exact File Hash (MD5) Matches: 0
+  - Perceptual Hash (pHash) Matches (<= 3 distance): 0
+  - Minimum Hamming distance found: 14
+
+Conclusion:
+The zero matches confirm that our Ethiopian dataset is entirely independent and does not
+contain any images from the public datasets. The 58,546 images are unique to this study.
+==================================================
+
+Saved 'hash_comparison.txt'.
